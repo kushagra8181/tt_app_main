@@ -3,7 +3,7 @@ name: Deploy Backend
 on:
   push:
     branches:
-      - feat/prod
+      - main
 
 jobs:
   deploy:
@@ -24,8 +24,8 @@ jobs:
 
             cd ~/server/tt_app_fe/tt_app_main
 
-            git checkout feat/prod
-            git pull origin feat/prod
+            git checkout main
+            git pull origin main
             
             npm install
             
